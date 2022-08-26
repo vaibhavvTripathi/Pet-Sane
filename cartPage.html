@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="cartPage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body class="bg-light">
+    <nav class="navbar  navbar-expand-md  bg-light pt-3 fixed-top">
+        <div class="container-sm d-flex align-item-baseline">
+            <a href="index.html" class="navbar-brand h1">pet<span style="color: #66099f;">Sane</span> </a>
+            <div class="cart">
+                <a href="cartPage.html" class="text-dark "> <i class="bi bi-cart3 h3"></i></a>
+               
+                <div class="cart-count h7 p-0 text-center text-white" style="background-color: red;">0</div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-5 empty-cart">
+       
+        <div class="row gx-4 bg-white p-4 pt-0">
+            <div class="products  d-flex justify-content-between align-item-center mt-2 mb-3 pt-3 text-center">
+                <a class=" products-link " href="">Cart Items</a>
+                <button onclick="clearCart()" class = " products-link d-none d-md-block bg-dark btn text-light rounded" href="">Clear Cart</button>
+            </div>
+            <div class="col-12 col-lg-8 items-content">
+                
+            </div>
+            
+            <div class="col-12 col-lg-4 order-1 border rounded p-4 shadow-sm " style="max-height: 300px; background-color: white;">
+                <h4 class="" style="color: #66099f;">Price Details</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Total Price : <span class="text-success price-details">0</span></li>
+                    <li class="list-group-item fw-bold">Delivery Charges : <span class="text-success">+$10</span><span class="text-muted fw-light h7"> (only for shopping less than $40)</span></li>
+                    <li class="list-group-item fw-bold">Final Price: <span class="text-success total-price-details">$10</span></li>
+                  </ul>
+            </div>
+        </div>
+    </header>
+    <footer class="landing-footer " style="background-color: rgb(243, 242, 242);">
+        <div class="footer-head" style="border-bottom: 1px solid rgb(205, 204, 204)">
+            <div class="d-flex py-4 pb-1 mb-1 justify-content-around align-item-center ">
+                <p class="lead d-none d-md-block">Get connected with us on the following platforms:</p>
+                <div class="icons d-flex justify-content-around align-item-center">
+                    <i class="bi bi-instagram ms-2"></i>
+                    <i class="bi bi-twitter ms-2"></i>
+                    <i class="bi bi-youtube ms-2"></i>
+                    <i class="bi bi-facebook ms-2"></i>
+                    <i class="bi bi-github ms-2"></i>
+                    <i class="bi bi-linkedin ms-2"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 mb-0 d-flex justify-content-around">
+            <div class="firstItem d-none d-md-flex flex-column w-25 me-5">
+               <h5 class="text-muted"><i class="bi bi-gem"></i> PET SANE</h5>
+                <p class="text-muted pe-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum,  elit. Assumenda, ab?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, error.
+                </p>
+            </div>
+            <div class="firstItem d-flex flex-column ms-5">
+                <h5 class="text-muted">Products</h5>
+                 <ul class="list-group list-group-flush ">
+                    <li class="text-muted mb-2" style="list-style: none;">Dog Food</li>
+                    <li class="text-muted mb-2" style="list-style: none;">Cat Food</li>
+                    <li class="text-muted mb-2" style="list-style: none;">Pet Swags</li>
+                    <li class="text-muted mb-2" style="list-style: none;">Pet Medicine</li>
+                 </ul>
+             </div>
+             <div class="firstItem d-flex flex-column ">
+                <h5 class="text-muted">Useful Links</h5>
+                <ul class="list-group list-group-flush ">
+                   <li class="text-muted mb-2" style="list-style: none;">Pricing</li>
+                   <li class="text-muted mb-2" style="list-style: none;">Settings</li>
+                   <li class="text-muted mb-2" style="list-style: none;">Orders</li>
+                   <li class="text-muted mb-2" style="list-style: none;">Help</li>
+                </ul>
+             </div>
+             <div class="firstItem d-none d-md-flex flex-column ms-5">
+                <h5 class="text-muted">Contact</h5>
+                <ul class="list-group list-group-flush ">
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-house-door-fill"></i> Haldwani, 263653 Kathgodam</li>
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-envelope"></i> info@example.com</li>
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-telephone-fill"></i> + 91 934 567 88</li>
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-printer-fill"></i> + 91 934 567 89</li>
+                </ul>
+             </div>
+            
+        </div>
+        <h6 class="text-center mt-3 p-2 bg-dark text-light mb-0">Copyright @2022</h6>
+    </footer>
+   <!-- modal -->
+   <div class="modal fade custom-modal" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container text-left">
+            <h6 class="text-muted ">START FOR FREE  <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></h6>
+            <h2><span class="text-primary">Create</span> new account<span class="text-primary">.</span></h2>
+            <p class="text-muted mb-3">Already A member? <a href="" class="text-primary" style="text-decoration: none;">Log In</a></p>
+            <form class="mb-2" action="">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="FirstName">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control " placeholder="LastName">
+                    </div>
+                </div>
+            </form>
+            <form class="email-section" action="">
+                <div class="row">
+                    <div class="col">
+                        <input type="email" id="email" class="form-control email-border" placeholder="E-Mail">
+                        <p class="text-muted email-message mb-1"></p>
+                    </div>
+                </div>
+            </form>
+            <form class="password-section" action="" class="mt-2">
+                <div class="row">
+                    <div class="col">
+                        <input type="password" id="password" class="form-control password-border" placeholder="password">
+                        <p class="text-muted password-message mb-1"></p>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer custom-modal-btns">
+          <button type="button" class="btn btn-primary ms-1" data-bs-dismiss="modal" aria-label="Close">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+    <script src="scripts/data2.js"></script>
+    <script src="scripts/cartPage2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+.service-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #7A0BC0;
+  }
+  .card-wrapper{
+    border: none;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  }
+  .img-info{
+    border-radius:100%;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+    padding: 2em ;
+    height: 300px;
+  }
+  .showcase::before{
+    display: block;
+    height: 55px;
+   content: " ";
+  
+  }
+  .products{
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  box-shadow: 0px 0px 10px 1px rgba(209,209,209,0.4);
+  }
+  .icons{
+    cursor: pointer;
+  }
+  
+  .checkbox-css{
+    position: relative;
+    bottom: -0.45em;
+  }

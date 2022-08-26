@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body class="">
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
+        <div class="container-sm">
+            <a href="" class="navbar-brand h1">pet<span style="color: #66099f;">Sane</span> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+               <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="" class="btn text-light nav-link me-3" data-bs-toggle="modal" data-bs-target="#signup" style="background-color: #66099f;">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="btn nav-link mx-3" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="btn nav-link " data-bs-toggle="modal" data-bs-target="#donate">Donate</a>
+                    </li>
+               </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- showcase -->
+    <header class="showcase bg-light">
+
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+                <div class="carousel-inner insert-carousel">
+                    
+                </div>
+            
+           
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </header>
+  
+  
+
+    <!-- services -->
+    <section class="services mb-3 pt-2">
+        <div class="container-sm">
+            <div class="service  d-flex justify-content-between align-item-center mt-2 mb-3 pt-3 text-center">
+                <a class=" service-link " href="">Our Services</a>
+                <a class = " service-link d-none d-md-block" href=""></a>
+            </div>
+            <div class="row card-array gy-3">
+                
+            </div>
+        </div>
+    </section>
+
+
+      
+     <!-- Modal -->
+<div class="modal fade custom-modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container text-left">
+            <h6 class="text-muted ">START FOR FREE  <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></h6>
+            <h2><span class="text-primary">Create</span> new account<span class="text-primary">.</span></h2>
+            <p class="text-muted mb-3">Already A member? <a href="" class="text-primary" style="text-decoration: none;">Log In</a></p>
+            <form class="mb-2" action="">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="FirstName">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control " placeholder="LastName">
+                    </div>
+                </div>
+            </form>
+            <form class="email-section" action="">
+                <div class="row">
+                    <div class="col">
+                        <input type="email" id="email" class="form-control email-border" placeholder="E-Mail">
+                        <p class="text-muted email-message mb-1"></p>
+                    </div>
+                </div>
+            </form>
+            <form class="password-section" action="" class="mt-2">
+                <div class="row">
+                    <div class="col">
+                        <input type="password" id="password" class="form-control password-border" placeholder="password">
+                        <p class="text-muted password-message mb-1"></p>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer custom-modal-btns">
+          <button type="button" class="btn btn-primary ms-1" data-bs-dismiss="modal" aria-label="Close">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- login modal -->
+  <div class="modal fade custom-modal" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container text-left">
+            <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width:10px"></button>
+            <h2 class="text-center mb-5"><span class="text-primary ">Log</span> in</h2>
+          
+            
+            <form class="email" action="">
+                <div class="row">
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="E-Mail">
+                    </div>
+                </div>
+            </form>
+            <form class="password" action="" class="mt-2">
+                <div class="row">
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                </div>
+            </form>
+            <p class="text-muted mb-3 mt-3">Forgot password? <a href="" class="text-primary" style="text-decoration: none;">Click Here</a></p>
+          </div>
+        </div>
+        <div class="modal-footer custom-modal-btns">
+          <button type="button" class="btn btn-primary ms-1" data-bs-dismiss="modal" aria-label="Close">Log in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- explore modal -->
+    <div class="modal fade custom-modal" id="explore" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="container text-left">
+                    <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width:10px"></button>
+                    <h2 class="text-center mb-5"><span class="text-warning ms-1">Book</span> your appointment</h2>
+                  
+                    
+                    <form class="mb-3" action="">
+                        <div class="row">
+                            <div class="col">
+                                <label for="pet-type" class="mb-2 h5 auto">Pet Type:</label>
+                                <input type="text" id="pet-type col-12" class="form-control" placeholder="Dog/ Cat">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="mb-3" action="">
+                        <div class="row">
+                            <div class="col">
+                                <label for="pet-type" class="mb-2 h5">Enter Location :</label>
+                                <input type="text" id="pet-type" class="form-control" placeholder="Location">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="mb-3" action="" class="mt-2">
+                        <div class="row">
+                            <div class="col">
+                                <label for="pet-type mb-2" class="mb-2 h5">Select Appointment Time:</label>
+                              
+                            </div>
+                        </div>
+                    </form>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-inline-flex p-1 align-items-start">
+                            <input class="checkbox-css" type="checkbox">
+                            <div class="wrap-info ms-2">
+                                <a href="" class="text-dark" style="text-decoration: none;"><p class="pt-0 ms-3">Morning  <span class="text-muted ms-2" style="float: right;">(8:00 AM-11:00 AM)</span></p></a>
+                              
+                            </div>
+                        </div>
+                        <div class="d-inline-flex p-1 align-items-start">
+                            <input class="checkbox-css" type="checkbox">
+                            <div class="wrap-info ms-2">
+                                <a href="" class="text-dark" style="text-decoration: none;"><p class="pt-0 ms-3">Afternoon <span class="text-muted ms-2" style="float: right;">(1:00 PM-3:00 PM)</span></p></a>
+                              
+                            </div>
+                        </div>
+                        <div class="d-inline-flex p-1 align-items-start">
+                            <input class="checkbox-css" type="checkbox">
+                            <div class="wrap-info ms-2">
+                                <a href="" class="text-dark" style="text-decoration: none;"><p class="pt-0 ms-3">Evening <span class="text-muted ms-2" style="float: right;">(4:00 PM-7:00 PM)</span></p></a>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer custom-modal-btns">
+              <button type="button" class="btn btn-primary ms-1 border-white bg-warning" data-bs-dismiss="modal" aria-label="Close">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- donation modal -->
+  <div class="modal fade custom-modal" id="donate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="container text-left">
+                <h6 class="text-muted ">DONATE FOR A CAUSE<button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></h6>
+                <h2><span class="text-success">Save</span> the strays<span class="text-success">.</span></h2>
+                <p class="text-muted mb-3">Not signed in yet? <a href="" class="text-success" style="text-decoration: none;">Sign Up</a></p>
+                
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-between border p-3 rounded align-items-start">
+                                <input class="checkbox-css" type="checkbox">
+                                <div class="wrap-info ms-2">
+                                    <a href="" class="text-dark" style="text-decoration: none;"><h5 class="pt-0">Pledge with no reward <span class="text-muted" style="float: right;"></span></h5></a>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, cum?
+                                </p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between border p-3 rounded align-items-start my-2">
+                                <input class="checkbox-css" type="checkbox">
+                                <div class="wrap-info ms-2">
+                                    <a href="" class="text-dark" style="text-decoration: none;"><h5 class="pt-0">Pledge with $25 or more<span class="text-muted h7" style="float: right;">101 left</span></h5></a>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, cum?
+                                </p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between border p-3 rounded align-items-start">
+                                <input class="checkbox-css" type="checkbox">
+                                <div class="wrap-info ms-2">
+                                    <a href="" class="text-dark" style="text-decoration: none;"><h5 class="pt-0">Pledge with $25 or more<span class="text-muted" style="float: right;">50 left</span></h5></a>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, cum?
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+              </div>
+        </div>
+        <div class="modal-footer custom-modal-btns">
+          <button type="button" class="btn btn-success ms-1" data-bs-dismiss="modal" aria-label="Close">Donate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+    <!-- how do we operate -->
+    <div class="operation-wrap bg-light">
+        <h2 class="text-center bg-light mt-5 mb-4 p-2 pt-4">How do we operate</h2>
+        <div class="container mt-2">
+            <div class="row card-array gy-3">
+                <div class="col-12 col-lg-3 d-flex flex-row flex-lg-column ">
+                    <h4 class="text-center my-3 px-3  d-lg-block ">Step-1</h4>
+                    <div class="img-info d-none d-lg-block">
+                      <img src="img/doorTodoors.svg"  style="width: 100%;" alt="">
+                    </div>
+                   <h4 class="text-center my-3 px-3 text-muted">We offer door to door services</h4>
+                </div>
+                <div class="col-12 col-lg-3  d-flex flex-row flex-lg-column ">
+                    <h4 class="text-center my-3 px-3  d-lg-block ">Step-2</h4>
+                    <div class="img-info d-none d-lg-block">
+                      <img src="img/team-2.svg"  style="width: 100%;" alt="">
+                    </div>
+                    <h4 class="text-center my-3 px-3 text-muted">Certified experts consult owners</h4>
+                </div>
+                <div class="col-12 col-lg-3 d-flex flex-row flex-lg-column ">
+                    <h4 class="text-center my-3 px-3  d-lg-block ">Step-3</h4>
+                    <div class="img-info d-none d-lg-block">
+                      <img src="img/treat.svg"  style="width: 100%;" alt="">
+                    </div>
+                    <h4 class="text-center my-3 px-3 text-muted">Pets get serviced</h4>
+                </div>
+                <div class="col-12 col-lg-3 d-flex flex-row flex-lg-column ">
+                    <h4 class="text-center my-3 px-3 d-lg-block ">Step-4</h4>
+                    <div class="img-info d-none d-lg-block">
+                      <img src="img/train.svg"  style="width: 100%;" alt="">
+                    </div>
+                    <h4 class="text-center my-3 px-3 text-muted">Happy life</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our products -->
+    <section class="products bg-dark text-light mt-3 pt-2 products">
+        <h2 class="text-center  p-3">OUR SHOP</h2>
+        <div class="">
+            <div class="  d-md-flex justify-content-around align-items-center mx-auto text-left p-5 " >
+                <img class = "showcase-img d-none d-sm-block img-fluid"  src="img/buyNow.svg" style="width: 600px;" alt="">
+                <div class="info-section text-center p-4">
+                    <h1 class="text-left">Explore our products here</h1>
+                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, atque!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, provident?
+                    </p>
+                    <a href="productPage.html" class="btn showcase-btn text-light py-2 px-3" style="background-color: #66099f;">Our Shop</a>
+                </div>
+                </div>     
+        </div>
+    </section>
+
+    <!-- accordion -->
+   
+    <div class="bg-light  py-3 pb-5">
+        <h2 class="text-center p-3 my-3 bg-light">Frequently Aksed Questions</h2>
+        <div class="accordion w-75 mx-auto generate-accordion" id="faqs">
+           
+        </div>
+    </div>
+
+    <!-- footer -->
+   <footer class="landing-footer " style="background-color: rgb(243, 242, 242);">
+        <div class="footer-head" style="border-bottom: 1px solid rgb(205, 204, 204)">
+            <div class="d-flex py-4 pb-1 mb-1 justify-content-around align-item-center ">
+                <p class="lead d-none d-md-block">Get connected with us on the following platforms:</p>
+                <div class="icons d-flex justify-content-around align-item-center">
+                    <i class="bi bi-instagram ms-2"></i>
+                    <i class="bi bi-twitter ms-2"></i>
+                    <i class="bi bi-youtube ms-2"></i>
+                    <i class="bi bi-facebook ms-2"></i>
+                    <i class="bi bi-github ms-2"></i>
+                    <i class="bi bi-linkedin ms-2"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 mb-0 d-flex justify-content-around">
+            <div class="firstItem d-none d-md-flex flex-column w-25 me-5">
+               <h5 class="text-muted"><i class="bi bi-gem"></i> PET SANE</h5>
+                <p class="text-muted pe-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum,  elit. Assumenda, ab?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, error.
+                </p>
+            </div>
+            <div class="firstItem d-flex flex-column ms-5">
+                <h5 class="text-muted">Products</h5>
+                 <ul class="list-group list-group-flush ">
+                    <li class="text-muted mb-2" style="list-style: none;">Dog Food</li>
+                    <li class="text-muted mb-2" style="list-style: none;">Cat Food</li>
+                    <li class="text-muted mb-2" style="list-style: none;">Pet Swags</li>
+                    <li class="text-muted mb-2" style="list-style: none;">Pet Medicine</li>
+                 </ul>
+             </div>
+             <div class="firstItem d-flex flex-column ">
+                <h5 class="text-muted">Useful Links</h5>
+                <ul class="list-group list-group-flush ">
+                   <li class="text-muted mb-2" style="list-style: none;">Pricing</li>
+                   <li class="text-muted mb-2" style="list-style: none;">Settings</li>
+                   <li class="text-muted mb-2" style="list-style: none;">Orders</li>
+                   <li class="text-muted mb-2" style="list-style: none;">Help</li>
+                </ul>
+             </div>
+             <div class="firstItem d-none d-md-flex flex-column ms-5">
+                <h5 class="text-muted">Contact</h5>
+                <ul class="list-group list-group-flush ">
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-house-door-fill"></i> Haldwani, 263653 Kathgodam</li>
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-envelope"></i> info@example.com</li>
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-telephone-fill"></i> + 91 934 567 88</li>
+                   <li class="text-muted mb-2" style="list-style: none;"><i class="bi bi-printer-fill"></i> + 91 934 567 89</li>
+                </ul>
+             </div>
+            
+        </div>
+        <h6 class="text-center mt-3 p-2 bg-dark text-light mb-0">Copyright @2022</h6>
+    </footer>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="scripts/data2.js"></script>
+    <script src="scripts/landing.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<!-- JavaScript Bundle with Popper -->
+
+</body>
+</html>
